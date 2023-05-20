@@ -6,6 +6,7 @@
  
 4. to create alert - http://127.0.0.1:8000/alert/create_alert/symbol/int_value
 5. to delete alert - http://127.0.0.1:8000/alert/delete_alert/symbol/int_value
+  P.S. for step 4 and 5 get the stock symbol from https://api.coingecko.com/api/v3/coins/markets?vs_currency=USD&order=market_cap_desc&per_page=400&page=1&sparkline=false
 
 6. hit this to update all the stock price - http://127.0.0.1:8000/alert/current_stock_price
 7. to find out triggered stock - http://127.0.0.1:8000/alert/stock_triggered
