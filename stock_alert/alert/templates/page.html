@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block css_files %}
+<link rel="stylesheet" href="{% static "style.css" %}">
+<link rel="stylesheet" href="{% static "includes/header.css" %}">
+{% endblock%}
+
+{% block page_title %}
+    All Alerts
+{% endblock%}
+
+{% block content %}
+    {% include "includes/header.html" %}
+    {% for entry in message%}
+    <li><a>{{entry.name}}, ratings ({{entry.curr_price}})</a></li>
+    {% endfor %}
+    {% comment %} {% else %} {% endcomment %}
+        {% comment %} <p class="fallback">There is no alert set!</p> {% endcomment %}
+    {% comment %} {% endif %} {% endcomment %}
+{% endblock%}
+    

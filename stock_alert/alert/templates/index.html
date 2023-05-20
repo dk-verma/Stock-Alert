@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block css_files %}
+<link rel="stylesheet" href="{% static "style.css" %}">
+<link rel="stylesheet" href="{% static "includes/header.css" %}">
+{% endblock%}
+
+{% block page_title %}
+    All Challenges
+{% endblock%}
+
+{% block content %}
+    {% include "includes/header.html" %}
+    <h2>{{text}}</h2>
+    {% comment %} {% if text is not None%}
+        <h2>{{text}}</h2>
+    {% else %}
+        <p class="fallback">There is no alert set!</p>
+    {% endif %} {% endcomment %}
+{% endblock%}
