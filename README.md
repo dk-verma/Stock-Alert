@@ -7,6 +7,7 @@ after cloning, goto project directory in terminal follow these steps
 ## setup
 ### pre-requisite
 - `git clone  https://github.com/dk-verma/stock_alert.git`
+- `cd stock_alert`
 - install all the dependency using - `pip install -r requirements.txt`
 
 1. to start server - `python3 manage.py runserver`
