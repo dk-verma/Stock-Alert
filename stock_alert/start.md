@@ -1,9 +1,9 @@
 
 after clone, goto project directory in terminal follow these steps
 
-0. install all the dependency using - pip install -r requirements.txt
+0. install all the dependency using - `pip install -r requirements.txt`
 
-1. to start server - python3 manage.py runserver
+1. to start server - `python3 manage.py runserver`
 
 2. to get all alert - http://127.0.0.1:8000/alert/all_alerts
 3. to get all active alerts - http://127.0.0.1:8000/alert/active_alerts
